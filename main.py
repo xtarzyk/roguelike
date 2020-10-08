@@ -6,8 +6,6 @@ PLAYER_ICON = '@'
 PLAYER_START_X = 3
 PLAYER_START_Y = 3
 
-BOARD_WIDTH = 30
-BOARD_HEIGHT = 20
 
 
 def create_player():
@@ -18,12 +16,15 @@ def create_player():
     Returns:
     dictionary
     '''
-    pass
+    player = {"avatar":"@" ,
+    "x":10,
+    "y": 5}
+    return player
 
 
 def main():
     player = create_player()
-    board = engine.create_board(BOARD_WIDTH, BOARD_HEIGHT)
+    board = engine.create_board(20, 10)
 
     util.clear_screen()
     is_running = True

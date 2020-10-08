@@ -1,5 +1,6 @@
 import sys
 import os
+import pygame
 
 
 def key_pressed():
